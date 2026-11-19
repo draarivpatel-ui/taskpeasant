@@ -2,7 +2,6 @@
 
 from datetime import timedelta
 
-import pytest
 
 from taskpeasant import execute_command
 from taskpeasant._colors import style_for_task, tw_style

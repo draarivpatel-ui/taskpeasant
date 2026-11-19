@@ -2,11 +2,10 @@
 
 from __future__ import annotations
 
-import pytest
 
 from taskpeasant import commands, execute_command, read_tasks
 
-from .conftest import UUID_DONE, UUID_OVERDUE, UUID_PLAIN, UUID_SOON
+from .conftest import UUID_OVERDUE, UUID_PLAIN, UUID_SOON
 
 
 def by_uuid(path):

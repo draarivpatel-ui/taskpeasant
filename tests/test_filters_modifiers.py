@@ -2,7 +2,6 @@
 
 from datetime import timedelta
 
-import pytest
 
 from taskpeasant.query import Filter, apply_filter
 from tests.conftest import iso, now_utc

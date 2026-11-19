@@ -15,7 +15,6 @@ from __future__ import annotations
 import uuid as _uuid_mod
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
-from typing import Optional
 
 # ── Canonical field names (subset of Taskwarrior's JSON schema) ──────────────
 _KNOWN_FIELDS = frozenset([

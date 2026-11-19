@@ -9,7 +9,6 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from typing import List, Optional, TYPE_CHECKING
 
-from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 from rich.text import Text
@@ -19,7 +18,6 @@ if TYPE_CHECKING:
 
 from ._dates import parse_date
 from .task_model import Task
-from .urgency import compute_urgency
 
 
 # ── Shared ────────────────────────────────────────────────────────────────────

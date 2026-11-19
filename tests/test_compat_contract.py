@@ -18,7 +18,6 @@ from taskpeasant.storage import _TP_KEY
 
 from .conftest import (
     SIBLING_KEYS,
-    UUID_DONE,
     UUID_OVERDUE,
     UUID_PLAIN,
     seed_tasks,

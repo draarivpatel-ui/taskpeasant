@@ -2,7 +2,6 @@
 
 from datetime import datetime, timedelta, timezone
 
-import pytest
 
 from taskpeasant._dates import parse_date, resolve_date, resolve_date_dt
 

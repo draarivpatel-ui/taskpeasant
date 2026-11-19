@@ -6,11 +6,10 @@ from datetime import timedelta
 
 import pytest
 
-from taskpeasant import execute_command, read_tasks
+from taskpeasant import execute_command
 from taskpeasant.query import Filter, FilterError, apply_filter, _retokenize
 
-from .conftest import (UUID_DONE, UUID_OVERDUE, UUID_PLAIN, UUID_SOON,
-                       iso, now_utc)
+from .conftest import (iso, now_utc)
 
 
 def names(tasks):

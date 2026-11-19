@@ -19,12 +19,11 @@ from rich.console import Console
 from rich.prompt import Confirm
 
 from . import _rich as R
-from ._dates import parse_date
 from ._taskrc import Taskrc, extract_rc_overrides, load_taskrc
 from .peasant_parser import (_execute_command, _resolve_id, _is_uuid,
                              _split_bulk)
 from .query import FilterError, apply_filter
-from .reports import _build_buckets, cmd_burndown
+from .reports import _build_buckets
 from .storage import read_tasks, assign_ids
 from .urgency import compute_urgency
 
@@ -40,7 +39,6 @@ def _rich_report(yaml_path: str, name: str, filter_tokens: list,
                  conf: Taskrc) -> None:
     """Render any engine report as a rich table."""
     from . import report_engine as RE
-    from .query import FilterError as _FE
 
     try:
         built = RE.build_report(yaml_path, name, filter_tokens, conf)
