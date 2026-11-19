@@ -12,7 +12,7 @@ from taskpeasant._vtags import (VIRTUAL_TAG_NAMES, annotate_virtual_tags,
 from taskpeasant.storage import _TP_KEY, assign_ids
 
 from .conftest import (UUID_DONE, UUID_OVERDUE, UUID_PLAIN, UUID_SOON,
-                       UUID_WAITING, iso, now_utc, seed_tasks)
+                       iso, now_utc)
 
 
 def test_status_tags(make_task):

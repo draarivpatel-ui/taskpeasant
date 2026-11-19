@@ -2,7 +2,6 @@
 
 from datetime import datetime, timedelta, timezone
 
-import pytest
 
 from taskpeasant import execute_command, read_tasks
 from taskpeasant.recurrence import (is_weekdays, nth_occurrence, parse_recur,

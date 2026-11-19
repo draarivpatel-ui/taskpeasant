@@ -8,7 +8,7 @@ import pytest
 from taskpeasant import execute_command
 from taskpeasant._taskrc import Taskrc
 from taskpeasant.report_engine import (format_duration_compact, get_formatter,
-                                       get_report, parse_sort_spec,
+                                       parse_sort_spec,
                                        sort_tasks)
 from taskpeasant.storage import write_tasks
 from tests.conftest import iso, now_utc

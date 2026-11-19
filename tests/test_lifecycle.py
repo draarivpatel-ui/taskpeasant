@@ -4,10 +4,8 @@ import, version — single-target and bulk."""
 import json
 import os
 
-import pytest
 
 from taskpeasant import execute_command, read_tasks
-from taskpeasant.storage import write_tasks
 from taskpeasant.undo import undo_path
 
 

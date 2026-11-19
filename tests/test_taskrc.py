@@ -1,13 +1,11 @@
 """Milestone 1: TW-style taskrc config — parsing, layering, rc overrides,
 show/config commands, legacy YAML config coexistence."""
 
-import os
 
-import pytest
 
 from taskpeasant import execute_command
 from taskpeasant._taskrc import (
-    DEFAULTS, Taskrc, default_taskrc_write_path, extract_rc_overrides,
+    Taskrc, extract_rc_overrides,
     find_taskrc_path, load_taskrc, looks_like_yaml_mapping,
     parse_taskrc_text, write_taskrc_value,
 )
