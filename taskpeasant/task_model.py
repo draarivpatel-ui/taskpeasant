@@ -33,11 +33,6 @@ _VALID_STATUSES = frozenset(["pending", "completed", "deleted", "waiting"])
 _EXTENDED_STATUSES = frozenset(["recurring"])
 
 
-def _now_tw() -> str:
-    """Return current UTC time in Taskwarrior wire format: 20260417T143000Z"""
-    return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-
-
 def _iso_to_tw(iso: str) -> str:
     """
     Accept any reasonable date string and normalise to TW wire format.

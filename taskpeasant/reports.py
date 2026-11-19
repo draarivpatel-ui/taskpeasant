@@ -30,10 +30,6 @@ _PERIODS = ("daily", "weekly", "monthly", "annual")
 
 # ── Shared helpers ────────────────────────────────────────────────────────────
 
-def _month_key(dt: datetime) -> tuple:
-    return (dt.year, dt.month)
-
-
 def _period_key(dt: datetime, period: str) -> tuple:
     if period == "daily":
         return (dt.year, dt.month, dt.day)
@@ -224,7 +220,7 @@ def cmd_burndown(tasks: List[Task], period: str = "daily") -> str:
                 cells.append(" ")
         chart_rows.append(y_label + "".join(f"{c}  " for c in cells).rstrip())
 
-    _, _, tick_fmt, group_fmt = _BURNDOWN_SPANS[period]
+    _, _, tick_fmt, _ = _BURNDOWN_SPANS[period]
     width = len(dates)
     title = {"daily": "Daily", "weekly": "Weekly",
              "monthly": "Monthly"}[period]
